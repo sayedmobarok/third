@@ -650,6 +650,7 @@ header{
     background-image: url(	https://digrand-wpdemo.owl-themes.net/wp-content/uploads/2022/08/bg_love_theme.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
 }
 .dateContainer {
@@ -787,6 +788,7 @@ header{
 .singleteam img{
     width: 100%;
     height: 75%;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 .singleteam p{
@@ -1028,6 +1030,7 @@ header{
 }
 .spleft2 input{
     width: 400px;
+    max-width: 100%;
     height: 160px;
     font-size: 15px;
     color: #fff;
@@ -1194,10 +1197,6 @@ footer{
     header{
         padding: 10px;
     }
-
-    .headerleft{
-        display: none;
-    }
     .headerright{
         width: 100%;
     }
@@ -1318,18 +1317,17 @@ footer{
 
 }
 @media (max-width:800px){
-    .headerright ul li {
-        margin-left: 12px;
-        font-size: 12px;
+    .headerright ul li{
+        display: none;
     }
+    
     .font h1{
         font-size: 50px;
     }
 }
 @media (max-width:750px){
     .headerright ul li {
-        margin-left: 12px;
-        font-size: 10px;
+        display: none;
     }
     .ourwork ul li{
         font-size: 12px;
@@ -1345,8 +1343,7 @@ footer{
 }
 @media (max-width:750px){
     .headerright ul li {
-        margin-left: 8px;
-        font-size: 8px;
+        display: none;
     }
     .cwd {
         padding: 10px;
@@ -1428,13 +1425,15 @@ footer{
         justify-content: space-between;
     }
     .spleft2{
-        width: 60%;
+        width: 300px;
+    }
+    .spleft2 input {
+        width: 100%;
     }
 }
 @media (max-width:550px){
     .headerright ul li{
-        font-size: 8px;
-        margin-left: 5px;
+        display: none;
     }
     .fbtn{
         display: flex;
@@ -1451,20 +1450,30 @@ footer{
     .spright{
         margin-top: 200px;
     }
+    .pcright button{
+        margin-left: 0;
+    }
+
+
+    .questionright {
+        width: 100%;
+    }
+    .qutable {
+        padding: 30px 20px
+    }
 }
 @media (max-width:400px){
     .headerright ul li{
-        font-size: 6px;
-        margin-left: 4px;
+        display: none;
     }
-    .headerright button{
-        width: 50px;
-        height: 25px;
-        font-size: 8px;
-        margin-left: 8px;
+    .headerleft img{
+        width: 150px;
     }
     .font{
         padding: 20px 40px;
+    }
+    .aboutus h2{
+        font-size: 30px;
     }
     .cwd {
         flex-wrap: wrap;
